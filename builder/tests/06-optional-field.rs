@@ -58,7 +58,7 @@ use derive_builder::Builder;
 pub struct Command {
     executable: String,
     args: Vec<String>,
-    env: Vec<String>,
+    env: Vec<Option<String>>,
     current_dir: Option<String>,
 }
 
